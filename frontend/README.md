@@ -1,21 +1,21 @@
 # frontend
 
-## Project setup
+## Instalar projeto
 ```
 npm install
 ```
 
-### Compiles and hot-reloads for development
+### Copila e inicializa o servidor de desenvolvimento
 ```
 npm run serve
 ```
 
-### Compiles and minifies for production
+### Copila e minifica os arquivos para rodar em produ;'ao
 ```
 npm run build
 ```
 
-### Lints and fixes files
+### Lê e concerta os codigos
 ```
 npm run lint
 ```
