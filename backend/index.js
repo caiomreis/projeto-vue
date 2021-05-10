@@ -19,5 +19,5 @@
 
   app.listen(3000, () => {
       console.log('Backend executando...')
-      console.log(app)
+      console.log('Express started at http://localhost:3000')
   })
