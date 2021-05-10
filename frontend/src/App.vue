@@ -1,15 +1,38 @@
 <template>
-	<div id="app">
-		<h1>Versão Inicial</h1>
-	</div>
+  <div id="app">
+    <Header/>
+	<Menu />
+ <Content />
+ <Footer/>
+  </div>
 </template>
 
 <script>
+import Header from "@/components/template/Header";
+import Menu from "@/components/template/Menu";
+import Content from "@/components/template/Content";
+import Footer from "@/components/template/Footer";
 export default {
-	name: "App",
-}
+  name: "App",
+  components: { Header, Menu, Content, Footer },
+};
 </script>
 
 <style>
+* {
+  font-family: Lato;
+}
+body {
+  margin: 0px;
+}
+#app {
+  -webkit-font-snoothing: antialiased;
+  -moz-osx-font-snoothing: grayscale;
 
+  height: 100vh;
+  display: grid;
+  grid-template-rows: 60px 1fr 40px;
+  grid-template-columns: 300px 1fr;
+  grid-template-areas:    "header header" "menu content" "menu footer";
+}
 </style>
